@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"/>
+    <title></title>
+</head>
+<body>
+<h1>User</h1>
+<p>ID: <span th:text="${user.getId()}"></span></p>
+<p>USERNAME: <span th:text="${user.username}"></span></p>
+<a class="btn btn-outline-success my-2 mr-2 my-sm-0" th:href="@{/logout}">Logout</a>
+</body>
+</html>
